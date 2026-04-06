@@ -26,7 +26,7 @@ cargo run
 Or after building:
 
 ```bash
-cargo run --release -- --config config/values.yaml
+cargo run --release -- --config example/values.yaml
 ```
 
 If `--config` is not provided, `values.yaml` is used by default.
@@ -89,8 +89,8 @@ In this example:
 ## Full example
 
 ```yaml
-pathToTarget: /Users/nullabler/Workspace/nullabler/confgen/example/conf.d/
-pathToTemplate: /Users/nullabler/Workspace/nullabler/confgen/example/template/
+pathToTarget: ./example/conf.d/
+pathToTemplate: ./example/template/
 template: template-main.conf
 targetExtension: conf
 
@@ -173,7 +173,3 @@ The project currently includes:
 - unit tests for rendering logic
 - unit tests for file writing logic
 - one integration test for end-to-end generation
-
-## CI
-
-GitHub Actions runs `cargo test` on every push and pull request.
