@@ -11,7 +11,7 @@ fn temp_dir_path(test_name: &str) -> PathBuf {
         .unwrap()
         .as_nanos();
 
-    std::env::temp_dir().join(format!("confgen-{test_name}-{timestamp}"))
+    std::env::temp_dir().join(format!("genconf-{test_name}-{timestamp}"))
 }
 
 #[test]
@@ -65,7 +65,7 @@ configs:
     )
     .unwrap();
 
-    let output = Command::new(env!("CARGO_BIN_EXE_confgen"))
+    let output = Command::new(env!("CARGO_BIN_EXE_genconf"))
         .arg("--config")
         .arg(&config_path)
         .output()

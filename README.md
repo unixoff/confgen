@@ -1,6 +1,6 @@
-# confgen
+# genconf
 
-`confgen` is a CLI utility for generating config files from templates.
+`genconf` is a CLI utility for generating config files from templates.
 
 The utility:
 
@@ -15,7 +15,7 @@ Run with:
 
 ```bash
 cargo build --release
-./target/release/confgen --config example/values.yaml
+./target/release/genconf --config example/values.yaml
 ```
 
 ## Configuration structure

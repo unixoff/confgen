@@ -70,17 +70,17 @@ mod tests {
             .unwrap()
             .as_nanos();
 
-        std::env::temp_dir().join(format!("confgen-{test_name}-{timestamp}.conf"))
+        std::env::temp_dir().join(format!("genconf-{test_name}-{timestamp}.conf"))
     }
 
     #[test]
     fn builds_target_path_from_name_and_extension() {
-        let config = make_config("/tmp/confgen", "conf");
+        let config = make_config("/tmp/genconf", "conf");
         let item = make_item("worker-default");
 
         let path = get_target_path(&config, &item);
 
-        assert_eq!(path, PathBuf::from("/tmp/confgen/worker-default.conf"));
+        assert_eq!(path, PathBuf::from("/tmp/genconf/worker-default.conf"));
     }
 
     #[test]
