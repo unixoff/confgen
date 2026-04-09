@@ -3,7 +3,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/unixoff/genconf)
 [![crates.io](https://img.shields.io/crates/v/genconf.svg)](https://crates.io/crates/genconf)
 [![crates.io](https://img.shields.io/crates/d/genconf.svg)](https://crates.io/crates/genconf)
-[![Released API docs](https://docs.rs/genconf/badge.svg)](https://docs.rs/genconf)
+![Crates.io](https://img.shields.io/crates/l/genconf)
 [![CI](https://github.com/unixoff/genconf/actions/workflows/ci.yml/badge.svg)](https://github.com/unixoff/genconf/actions/workflows/ci.yml)
 [![dependency status](https://deps.rs/repo/github/unixoff/genconf/status.svg)](https://deps.rs/repo/github/unixoff/genconf)
 
