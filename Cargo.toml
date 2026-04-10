@@ -1,6 +1,6 @@
 [package]
 name = "genconf"
-version = "1.1.1"
+version = "1.1.2"
 edition = "2024"
 description = "CLI utility for generating config files from YAML-driven templates"
 license = "MIT"
